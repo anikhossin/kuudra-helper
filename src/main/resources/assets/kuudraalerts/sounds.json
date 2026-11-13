@@ -1,0 +1,20 @@
+{
+  "pigssound": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "kuudraalerts:pigssound",
+        "stream": false
+      }
+    ]
+  },
+  "blazesound": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "kuudraalerts:blazesound",
+        "stream": false
+      }
+    ]
+  }
+}

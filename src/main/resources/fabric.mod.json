@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "kuudraalerts",
+  "version": "1.0.0",
+  "name": "Kuudra Mob Alerts",
+  "description": "Safe client-side alerts for Kuudra Knockers and Smoldering Blazes with Betty voice warning sounds.",
+  "authors": [
+    "Developer"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.kuudraalerts.KuudraAlertClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": ">=26.1",
+    "fabric-language-kotlin": "*"
+  }
+}
