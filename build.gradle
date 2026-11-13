@@ -11,13 +11,17 @@ repositories {
 }
 
 dependencies {
-    compileOnly files("C:/Users/prith/AppData/Roaming/.minecraft/versions/26.2/26.2.jar")
-    compileOnly files("C:/Users/prith/AppData/Roaming/PrismLauncher/libraries/net/fabricmc/fabric-loader/0.19.3/fabric-loader-0.19.3.jar")
+    compileOnly files(findProperty("mcJar") ?: "C:/Users/prith/AppData/Roaming/.minecraft/versions/26.2/26.2.jar")
+    compileOnly files(findProperty("loaderJar") ?: "C:/Users/prith/AppData/Roaming/PrismLauncher/libraries/net/fabricmc/fabric-loader/0.19.3/fabric-loader-0.19.3.jar")
     compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+}
+
+test {
+    useJUnitPlatform()
 }
 
 jar {
     archiveBaseName.set("KuudraAlerts")
     archiveVersion.set("1.0.0")
-    from("src/main/resources")
 }
